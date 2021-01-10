@@ -1,0 +1,170 @@
+/*
+==========================================
+    Primary Controls
+==========================================
+*/
+html {
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    width: .3rem;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); 
+    border-radius: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $secondary; 
+    border-radius: 0;
+    color:$light; 
+}
+::-moz-selection { 
+  background-color: $warning; 
+  color:$light;
+}
+
+::selection {
+  background-color: $warning; 
+  color:$light;
+}
+button,.btn,.badge { 
+  &:focus,&:active,&:hover{
+	  box-shadow: none !important;
+	  outline: none;
+  }
+}
+h1 a, h2 a, h3 a, h4 a, h5 a , h6{
+   color: $secondary; 
+}
+img{
+	max-width: 100%;
+}
+figure{
+  img{
+     width:100%; 
+  }
+}
+a:hover {
+    text-decoration: none;
+}
+.form-control::-webkit-input-placeholder { 
+  color: $secondary;
+}
+
+.form-control:-ms-input-placeholder { 
+  color: $secondary;
+}
+
+.form-control::placeholder {
+  color: $secondary;
+}
+.form-control {
+   &:focus,&:active,&:hover{  
+   }
+}
+.page-link:focus {
+    box-shadow: none;
+}
+.input-group-btn:not(:first-child) > .btn-group,
+.input-group-btn:not(:first-child) > .btn {
+   &:focus,&:active,&:hover{
+      z-index: 1;
+   }
+}
+.form-control,.custom-select {
+   height: auto; 
+  &:focus,&:active,&:hover{
+    box-shadow: none;
+  outline: none;
+  border-color: $primary;
+  z-index: 2;
+  }
+} 
+.form-check {
+  padding-left: 0;
+}
+
+.form-check label {
+  position: relative;
+  padding-left: 2rem;
+  cursor: pointer;
+}
+
+.form-check label:before {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  border: .1rem solid rgba($black, .2);
+  background-color: $info;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  position: absolute;
+  top: .2rem;
+  left: 0;
+}
+
+.form-check label:after {
+  content:'\f00c';
+  font-family:"Font Awesome 5 Free";
+  font-weight: 900; 
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  border: .1rem solid $success;
+  background-color:$success;
+  color: $light;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: .1rem;
+  left: 0;
+  font-size: .8rem;
+}
+
+.form-check input {
+  display: none;
+}
+
+.form-check input:checked ~ label:before {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.form-check input:checked ~ label:after {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+// scrollUp
+a#scrollUp {
+    background: $success;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 30px;
+    bottom: 75px;
+    text-align: center;
+    line-height: 40px;
+    color: $light;
+    font-size: 20px;
+    opacity: 0.9;
+    border-radius: 100%;
+    
+}

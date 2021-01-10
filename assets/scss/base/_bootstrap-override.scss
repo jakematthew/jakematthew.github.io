@@ -1,0 +1,79 @@
+// Color 
+
+$primary:#031931 ;
+$secondary: #031931;
+$success:#f34933;
+$danger:#343A40;
+$warning: #00D6EA;
+$info: #f8f9fa;
+$light:#FFFFFF; 
+$dark:#000000; 
+$muted: #8492a6;
+
+// Extra Colors
+
+$gradient: linear-gradient(90deg, rgba(20,20,51,0.9) 0%, rgba(20,20,51,1) 45%, rgba(20,20,51,1) 100%);
+
+// Forms
+
+$input-bg: transparent;
+$input-placeholder-color: lighten(#000 , 80%) ;
+
+// Typography
+
+$font-size-base:  1.02rem;
+$font-family-base: 'Poppins', sans-serif;
+$headings-font-family: 'Poppins', sans-serif;
+$font-weight-bold: 700;
+$headings-font-weight: 700;
+$font-weight-normal: 400;
+$line-height-base:   1.6; 
+$headings-line-height:  1.2 ;
+$display-line-height: 1.1 ;
+$h1-font-size:   $font-size-base * 2.5;
+$h2-font-size:   $font-size-base * 2 ;
+$h3-font-size:   $font-size-base * 1.75;
+$h4-font-size:   $font-size-base * 1.5 ;
+$h5-font-size:   $font-size-base * 1.25 ;
+$h6-font-size:   $font-size-base ;
+$display1-weight:  700;
+$display2-weight:  700;
+$display3-weight:  700;
+$display4-weight:  700;
+
+// Component
+
+$border-radius:               .25rem;
+$border-radius-lg:               1rem;
+$box-shadow: 5px 5px 30px rgba(0,0,0,.05);
+$box-shadow-lg: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+// Spacing
+
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge(
+  (
+	  0: 0,
+	  1: ($spacer * .25),
+	  2: ($spacer * .5),
+	  3: ($spacer * 1),
+	  4: ($spacer * 2),
+	  5: ($spacer * 3),
+	  6: ($spacer * 4),
+	  7: ($spacer * 5),
+	  8: ($spacer * 6),
+	  9: ($spacer * 7),
+	  10: ($spacer * 8)
+  ),
+  $spacers
+);
+
+// Buttons
+
+$input-btn-padding-y:      .6rem;
+$input-btn-padding-x:      1.875rem ;
+$input-btn-padding-y-sm:      .5rem; 
+$input-btn-padding-x-sm:      1rem ;
+$input-btn-padding-y-lg:      .5rem;
+$input-btn-padding-x-lg:      1rem ;

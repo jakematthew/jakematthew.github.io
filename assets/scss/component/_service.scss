@@ -1,0 +1,62 @@
+/*
+==========================================
+    Service Area
+==========================================
+*/
+
+.service-box{
+    padding: 30px;
+    background-color:$light;
+    box-shadow:$box-shadow;
+    text-align: center;
+    margin-top: 30px;
+    transition: $transition-base;
+    .service-icon{
+        color: $success;
+        font-size:55px;
+    }
+    .overlay-icon{
+        position: absolute;
+        right: 15px;
+        bottom: 0;
+        opacity: 0;
+        img{
+            height: 50px;
+            width: 50px;
+            transition: $transition-base;
+        }
+    }
+       &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 70px;
+        height: 5px;
+        margin: 0 auto;
+        background-color: transparent;
+        transition: $transition-base;
+      }
+     &:hover {
+        box-shadow: $box-shadow-lg;
+        background-color: $light;
+        transform: translateY(-5px);
+        border-color: transparent;
+        .overlay-icon {
+            z-index: -1;
+            opacity: 0.04;
+
+            img{
+                height: 100px;
+                width: 100px;
+                color: $primary;
+            }
+        }
+          &:after {
+            width: 100%;
+            background-color:$success;
+          }
+    }
+
+}

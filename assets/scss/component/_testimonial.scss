@@ -1,0 +1,73 @@
+/*
+==========================================
+    Testimonial Area
+==========================================
+*/
+
+.testimonial-box{
+    border:1px solid rgba($primary,0.1);
+    background-color:$info;
+    padding: 30px;
+    margin-top: 30px;
+    text-align: center;
+    h5 {
+        font-size: 20px;
+    
+    }
+    .rating-image{
+        position: relative;
+        display: table;
+        margin: 15px auto;
+       
+        img{
+            width: 90px;
+            max-width: unset;
+        }
+        .rating-point{
+            border: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+        }
+    }
+    .author-image{
+       height: 60px;
+       width: 60px !important;
+       margin: auto;
+       object-fit: cover;
+
+    }
+}
+.single-tem-box{
+    img.rounded-circle.img-height {
+        height: 60px;
+        width: 60px;
+    }
+    .ratting-icon {
+        float: right;
+        position: relative;
+        top: -38px;
+    }
+   
+   
+    
+}
+.testimonial-slider{
+    .owl-dots{
+        text-align: center;
+        margin-top: 25px;
+        .owl-dot {
+            height: 10px;
+            width: 10px;
+            background-color: $primary;
+            display: inline-block;
+            margin: 0 2px;
+            border-radius: 50%;
+            &.active {
+                background-color:$success ;
+            }
+        }
+    }
+
+}

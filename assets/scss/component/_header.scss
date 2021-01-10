@@ -1,0 +1,101 @@
+/*
+==========================================
+    Header Area
+==========================================
+*/
+.navbar-toggler{    
+    width: 2.75rem;
+    height: 2.75rem;
+    display: block;
+    background-color: transparent;
+    position: relative;
+    right: 0;
+    top: .2rem; 
+    z-index: 5; 
+    transition: $transition-base; 
+   span{
+    display: block;
+    width: 25px;
+    height: 1px;
+    background-color: $light;
+    position: absolute;
+    top: 13px;
+    left: 9px;
+    transition: $transition-base; 
+  
+  &:nth-child(2) {
+    top: 21px;
+  } 
+  &:nth-child(3) {
+    top: 29px;
+  }
+   }
+ 
+}
+ .navbar-toggler[aria-expanded="true"]{
+        span{
+        &:nth-child(1) {
+        top: 19px;
+        transform: rotate(-45deg);
+    }
+    &:nth-child(2) {
+        top: 20px;
+        opacity: 0;
+    }
+    &:nth-child(3) {
+        top: 21px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    }
+}
+.header-navbar{
+    padding: 20px 15px;
+    width: 100%;
+    z-index: 999;
+    margin-bottom: 0px;
+    transition: $transition-base; 
+    .navbar-nav{
+        li{
+            a{ 
+                padding:5px 20px !important;
+                transition: $transition-base; 
+                color:$light;
+                &:hover{
+                    color:$success;
+                }
+            }
+            &.active{
+                a{
+                     color:$success;
+                }
+            }
+        }
+    }
+}
+.header-social-list{
+    li {
+        a {
+            display: inline-block;
+            height: 32px;
+            width: 32px;
+            text-align: center;
+            padding:4px 2px;
+            border-radius: $border-radius;
+            background-color:$light;
+            color:$secondary;
+        
+            transition: $transition-base;
+            &:hover{
+                background-color:$primary;
+       
+                color:$light;
+            }
+        }
+    }
+}
+
+.nav-sticky {
+    background-color: rgba($secondary, 0.9);
+    box-shadow: $box-shadow;
+}

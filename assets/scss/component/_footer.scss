@@ -1,0 +1,47 @@
+/*
+==========================================
+    Footer Area
+==========================================
+*/
+
+.footer-widget{
+     
+	.footer-logo{
+	img{
+		  height: 20px;
+	  }
+	}
+	.footer-social-list{
+	li {
+	    a {
+	        display: inline-block;
+	        height: 32px;
+	        width: 32px;
+	        text-align: center;
+	        padding:4px 2px;
+	        border-radius: $border-radius;
+	        background-color:$light;
+	        color:$secondary;
+	        border: 0;
+	        transition: $transition-base;
+	        &:hover{
+	            background-color:$primary;
+	            border-color: $primary;
+	            color:$light;
+	        }
+	    }
+	 }
+	}
+
+  
+}
+.footer-copyright{
+	p{
+		i{
+			color:$success;
+		}
+	}
+	a {
+		color: $success;
+	}
+}

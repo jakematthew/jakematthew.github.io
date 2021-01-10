@@ -1,0 +1,29 @@
+/*
+==========================================
+    Team Area
+==========================================
+*/
+
+.team-box {
+  border:1px solid rgba($primary,0.1);
+  background-color: $info;
+  padding: 30px;
+  margin-top: 30px;
+  text-align: center;
+  transition: $transition-base;
+  .team-image{
+    height: 60px;
+    
+    margin: auto auto 20px auto;
+    img{
+    max-height: 100%;
+    }
+  }
+  &:hover {
+    background-color: $light;
+      box-shadow: $box-shadow-lg;
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+  }
+
+}

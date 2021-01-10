@@ -1,0 +1,22 @@
+<!--  ======== Blog Area Start =======  -->
+<section class="blog-area pt-10 pb-10" id="news">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 m-auto">
+                <div class="section-title mb-2 text-center">
+                    <h3 class="mb-5">News & Blog</h3>
+                    <p>The as name project and have the we for can luxury. So bidding temple the to handwriting a
+                        work, from in unavoidable.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for post in site.posts %}
+                <div class="col-lg-4 col-md-6">
+                    {% include post-card.html %}
+                </div>
+            {% endfor %}            
+        </div>
+    </div>
+</section>
+<!--  ======== Blog Area End ==========  -->

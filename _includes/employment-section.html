@@ -1,0 +1,30 @@
+<!--====== Team Area Start======-->
+<section class="team-area pt-10">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 m-auto">
+                <div class="section-title text-center mb-2">
+                    <h3 class="mb-5">Employement History</h3>
+                    <p>The as name project and have the we for can luxury. So bidding temple the to handwriting a
+                        work, from in unavoidable.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for employement in site.data.employements %}
+            <div class="col-lg-4 col-md-6">
+                <div class="team-box text-center">
+                    <div class="team-image">
+                        <img src="{{employement.image}}" alt="{{employement.designation}}">
+                    </div>
+                    <p class="mb-5">{{employement.description}} </p>
+                    <h5 class="m-0">{{employement.designation}}</h5>
+                    <p class="m-0 small pt-1 pb-2">{{employement.office}}</p>
+                    <span><strong>{{employement.working-year}}</strong></span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!--====== Team Area End======-->

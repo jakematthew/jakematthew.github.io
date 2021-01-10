@@ -1,0 +1,25 @@
+---
+layout: default
+pagination:
+    enabled: true
+---
+
+{% include inner-page-title.html %}
+
+<!--  ======== Blog Area Start =======  -->
+<section class="blog-area my-10" id="news">
+    <div class="container">
+        <div class="row">
+            {% for post in paginator.posts %}
+            <div class="col-lg-4 col-md-6">
+                {% include post-card.html %}
+            </div>
+            {% endfor %}
+        </div>
+        <div class="row">
+            {% include pagination.html %}
+        </div>
+    </div>
+</section>
+
+<!--  ======== Blog Area End ==========  -->

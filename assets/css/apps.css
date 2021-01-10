@@ -1,0 +1,704 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Project Name
+Version:    1.0
+Last change:    24/03/17 [fixed Float bug, vf]
+Author Name: Author Name
+Primary use:    Project Type
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2.
+-------------------------------------------------------------------*/
+/*
+==========================================
+    Reset Css
+==========================================
+
+*/
+.pt-100 {
+  padding-top: 100px; }
+
+.pb-100 {
+  padding-bottom: 100px; }
+
+ul {
+  padding: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px; }
+
+p {
+  margin: 0;
+  line-height: 1.8;
+  letter-spacing: 0.03em; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px; }
+
+a {
+  text-decoration: none !important; }
+
+button {
+  outline: none !important;
+  border: none !important; }
+
+/*
+==========================================
+    Google Fonts
+==========================================
+*/
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8Z11lFc-K.woff2) format("woff2");
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB; }
+
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8Z1JlFc-K.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format("woff2");
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB; }
+
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJfecg.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2) format("woff2");
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB; }
+
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2) format("woff2");
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB; }
+
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2) format("woff2");
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB; }
+
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/*
+==========================================
+    Header Css
+==========================================
+*/
+.social-icon li a {
+  color: #000;
+  border: 1px solid #adb5bd;
+  display: inline-block;
+  height: 32px;
+  text-align: center;
+  font-size: 15px;
+  width: 32px;
+  line-height: 30px;
+  border-radius: 7px;
+  background: #ffff;
+  border: inherit; }
+  .social-icon li a:hover {
+    background: #f89d36;
+    border: #f89d36;
+    color: #ffff; }
+
+.navbar-custom {
+  padding: 20px 0;
+  width: 100%;
+  z-index: 999;
+  margin-bottom: 0px; }
+  .navbar-custom .navbar-nav a:hover {
+    color: #f89d36 !important; }
+
+.nav-sticky.navbar-custom {
+  margin-top: 0px;
+  padding: 12px 0px;
+  background-color: #000;
+  opacity: .7;
+  box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1);
+  color: #3c4858 !important; }
+
+.navbar-custom .navbar-nav .nav-item .nav-link {
+  color: #ffff;
+  background-color: transparent !important;
+  margin: 0 8px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 35px;
+  text-transform: uppercase;
+  transition: all 0.2s; }
+
+.nav-sticky.navbar-custom .navbar-nav .nav-item .nav-link {
+  color: #ffff; }
+
+/*
+==========================================
+    Slider Css
+==========================================
+*/
+.single-banner {
+  height: 100vh;
+  background-size: cover;
+  background-position: top center; }
+  .single-banner .bg-overlay {
+    background-color: rgba(60, 72, 88, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; }
+  .single-banner .banner-content-wrap {
+    height: 100vh;
+    display: flex;
+    align-items: center; }
+
+/*
+==========================================
+    About Css
+==========================================
+*/
+.img-fluid {
+  max-width: 100%;
+  height: auto; }
+
+.about-heor {
+  position: relative; }
+  .about-heor:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    border-radius: 7px;
+    border: 16px solid; }
+
+/*
+==========================================
+    Catagoris Css
+==========================================
+*/
+.title-catagoris {
+  position: relative; }
+  .title-catagoris:after {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    top: 53px;
+    z-index: 1;
+    background: #f89d36;
+    margin-left: -7px;
+    transform: rotate(45deg); }
+  .title-catagoris::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 80px;
+    top: 57px;
+    background: #f89d36;
+    margin-left: -42px; }
+
+.interests-desc {
+  transition: .4s; }
+  .interests-desc:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 40px;
+    background: #e9ecef;
+    z-index: 1; }
+  .interests-desc:hover {
+    background: #ffff !important;
+    box-shadow: 0 10px 25px rgba(60, 72, 88, 0.15);
+    transform: translateY(-5px);
+    transition: .4s; }
+    .interests-desc:hover i {
+      color: #f89d36; }
+  .interests-desc i {
+    font-size: 20px; }
+
+/*
+==========================================
+    Counter Css
+==========================================
+*/
+.bg-overlay {
+  background-color: rgba(60, 72, 88, 0.7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; }
+
+.counter-icon {
+  font-size: 35px;
+  color: #f89d36; }
+
+/*
+==========================================
+    Service Css
+==========================================
+*/
+.service-wrapper {
+  transition: all 0.2s ease;
+  height: 280px; }
+  .service-wrapper .content .title {
+    transition: all 0.2s ease;
+    font-weight: 500; }
+  .service-wrapper.border-footer:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 70px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: transparent;
+    transition: all .5s ease-in-out; }
+  .service-wrapper .big-icon {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    opacity: 0.02; }
+    .service-wrapper .big-icon img {
+      height: 50px;
+      width: 50px;
+      transition: all 0.5s ease; }
+  .service-wrapper:hover {
+    box-shadow: 0 10px 25px rgba(60, 72, 88, 0.15);
+    background: #ffff;
+    transform: translateY(-5px);
+    border-color: transparent !important; }
+    .service-wrapper:hover:after {
+      width: 95%;
+      background-color: #f89d36; }
+    .service-wrapper:hover .title {
+      color: #f89d36; }
+    .service-wrapper:hover .big-icon {
+      z-index: -1;
+      opacity: 0.04; }
+      .service-wrapper:hover .big-icon img {
+        height: 200px;
+        width: 200px;
+        color: #f89d36; }
+  .service-wrapper .icon i {
+    font-size: 25px; }
+
+/*
+==========================================
+    Resume Css
+==========================================
+*/
+.timeline-page img.rounded-circle.img-height {
+  height: 60px;
+  width: 60px; }
+
+.timeline-page:hover:hover {
+  background: #ffff !important;
+  box-shadow: 0 10px 25px rgba(60, 72, 88, 0.15);
+  transform: translateY(-5px);
+  transition: .4s; }
+
+/*
+==========================================
+    Skill Css
+==========================================
+*/
+.nav-pills .nav-link {
+  color: #161c2d !important;
+  margin: auto 15px;
+  border: 1px solid #e9ecef; }
+  .nav-pills .nav-link.active {
+    background-color: #f89d36;
+    color: #ffff !important;
+    border-color: #f89d36 !important;
+    box-shadow: 0 0 3px rgba(60, 72, 88, 0.15); }
+
+.gallary-title h5 {
+  letter-spacing: inherit; }
+
+.gallary-title span {
+  opacity: .7; }
+
+.card {
+  margin-bottom: 10px; }
+
+.btn-link {
+  color: #f89d36;
+  text-decoration: none !important; }
+  .btn-link:hover {
+    color: #f89d36; }
+
+/*
+==========================================
+    Skill Css
+==========================================
+*/
+.portfolioFilter li a {
+  transition: all 0.4s ease-in-out;
+  line-height: 30px; }
+
+.portfolioFilter li a:hover {
+  color: #ffff !important;
+  background-color: #f89d36; }
+
+.portfolioFilter li a.active {
+  color: #ffff !important;
+  background-color: #f89d36; }
+
+.portfolio-box {
+  transition: all 0.2s ease; }
+  .portfolio-box .portfolio-box-img img {
+    transition: all 0.5s ease; }
+  .portfolio-box .portfolio-box-img .overlay-work {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    background-color: rgba(60, 72, 88, 0.65); }
+    .portfolio-box .portfolio-box-img .overlay-work .work-content {
+      position: absolute;
+      bottom: 50%;
+      transform: translateY(50%);
+      right: 0;
+      left: 0; }
+      .portfolio-box .portfolio-box-img .overlay-work .work-content .work-icon {
+        height: 45px;
+        width: 45px;
+        line-height: 43px;
+        transform: translateY(40px);
+        transition: all 0.5s ease; }
+        .portfolio-box .portfolio-box-img .overlay-work .work-content .work-icon .image-icon {
+          stroke-width: 2 !important; }
+        .portfolio-box .portfolio-box-img .overlay-work .work-content .work-icon:hover {
+          color: #f89d36 !important; }
+  .portfolio-box .gallary-title {
+    background: #ffff; }
+    .portfolio-box .gallary-title .title {
+      transition: all 0.5s ease;
+      font-weight: 500;
+      font-size: 16px !important; }
+      .portfolio-box .gallary-title .title:hover {
+        color: #f89d36 !important; }
+  .portfolio-box:hover {
+    box-shadow: 0 10px 25px rgba(60, 72, 88, 0.15);
+    transform: translateY(-5px); }
+    .portfolio-box:hover .portfolio-box-img img {
+      transform: rotate(2deg) scale(1.15);
+      opacity: 0.5; }
+    .portfolio-box:hover .portfolio-box-img .overlay-work {
+      opacity: 1;
+      transform: scale(1); }
+      .portfolio-box:hover .portfolio-box-img .overlay-work .work-content .work-icon {
+        transform: translateY(0px); }
+
+/*
+==========================================
+    Testimonial Css
+
+==========================================
+*/
+.single-tem-box img.rounded-circle.img-height {
+  height: 60px;
+  width: 60px; }
+
+.single-tem-box .ratting-icon {
+  float: right;
+  position: relative;
+  top: -38px; }
+
+.owl-dot {
+  height: 10px;
+  width: 10px;
+  background: #ddd;
+  display: inline-block;
+  margin: 0 2px;
+  border-radius: 50%; }
+
+.owl-dots {
+  text-align: center;
+  margin-top: 25px; }
+  .owl-dots .active {
+    background: #f89d36; }
+
+.testimonials-author-wrapper {
+  display: table; }
+  .testimonials-author-wrapper img {
+    width: 90px !important; }
+
+.rating-containerdiv {
+  position: relative; }
+
+.rating-cornerimage {
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden; }
+
+/*
+==========================================
+    Blog Css
+==========================================
+*/
+.blog-area-posted:hover {
+  box-shadow: 0 10px 25px rgba(60, 72, 88, 0.15) !important;
+  background: #ffff;
+  transform: translateY(-5px);
+  transition: .4s; }
+
+.blog-area-posted a.text-dark:hover {
+  color: #f89d36 !important;
+  transition: .4s; }
+
+.blog-area-posted i {
+  font-size: 13px; }
+  .blog-area-posted i:hover {
+    color: #f89d36 !important; }
+
+.blog-area-posted li {
+  list-style: none; }
+
+/*
+==========================================
+    Contact Css
+==========================================
+*/
+.content-icon {
+  font-size: 30px; }
+
+a.text-primary:hover {
+  color: #f89d36 !important; }
+
+.form-group .form-control {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  line-height: 26px;
+  color: #161c2d;
+  background: #ffff;
+  border-radius: 3px;
+  transition: all 0.2s ease; }
+
+.form-group textarea#comments {
+  height: 177px !important; }
+
+.page-next-level:before {
+  position: absolute;
+  width: 2px;
+  height: 15px;
+  background: #ffff;
+  content: "";
+  top: 54px;
+  margin-left: -12px;
+  opacity: .7; }
+
+.typofix p {
+  padding-top: 2rem; }
+
+.blog-type {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  border-radius: 0.25rem !important;
+  position: relative;
+  overflow: hidden;
+  margin-top: 2rem;
+  padding: 1.5rem !important; }
+  .blog-type h6 {
+    font-weight: normal; }
+  .blog-type .content h6 {
+    font-weight: normal; }
+  .blog-type .content p {
+    color: #8492a6;
+    margin-top: 1rem; }
+
+.comment-area a {
+  letter-spacing: normal; }
+  .comment-area a:hover {
+    color: #f89d36 !important; }
+
+.comment-area .media img {
+  width: 80px; }
+
+.comment-area .img-thumbnail {
+  padding: .25rem;
+  background-color: #ffff;
+  border: 1px solid #dee2e6;
+  border-radius: .25rem;
+  max-width: 100%;
+  height: auto; }
+
+.page-navigation {
+  display: flex;
+  justify-content: center; }
+
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 4px; }
+
+.page-navigation .pagination li a.active, .page-navigation .pagination li a:hover {
+  color: #ffff;
+  background-color: #3f51b5;
+  z-index: 0; }
+
+.page-link {
+  border: none;
+  outline: none !important; }
+
+.section-copyright.border-top {
+  border-top: 1px solid #7d7373dd !important; }
+
+.client-review {
+  padding: 30px 30px 40px 30px; }
+
+a#scrollUp {
+  background: #f89d36;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  right: 30px;
+  bottom: 75px;
+  text-align: center;
+  line-height: 40px;
+  color: #ddd;
+  font-size: 20px;
+  opacity: 0.9;
+  border-radius: 10px; }
+
+.card {
+  margin-bottom: 10px; }
+
+.btn-link {
+  color: #f89d36;
+  text-decoration: none !important; }
+  .btn-link:hover {
+    color: #f89d36; }

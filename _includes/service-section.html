@@ -1,0 +1,31 @@
+<!--====== Service Area Start ======-->
+<section class="service-area bg-info py-10" id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 m-auto">
+                <div class="section-title text-center mb-2">
+
+                    <h3 class="mb-5">My Services</h3>
+                    <p>Was sleeping carpeting employed my village thoughts have eightypercent with flatter of
+                        everyone need steadily as himself to could for.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for service in site.data.services %}
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box text-center" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">
+                        <div class="service-icon">
+                            <i class="{% if service.icon == 'fa-apple' %}fab{% else %}fas{% endif %} {{service.icon}}"></i>
+                        </div>
+                        <div class="service-content">
+                            <h5 class="my-3">{{service.name}}</h5>
+                            <p>{{service.description}}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!--====== Service Area End ======-->

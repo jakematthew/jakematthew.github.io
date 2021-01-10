@@ -1,0 +1,33 @@
+<!--  ======== Testimonial Area ========  -->
+<section class="testimonial-area pt-10">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 m-auto">
+                <div class="section-title text-center mb-2">
+                    <h3 class="mb-5">Client Testimonial</h3>
+                    <p>The as name project and have the we for can luxury. So bidding temple the to handwriting a
+                        work, from in unavoidable.</p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-slider owl-carousel">
+
+            {% for testimonial in site.data.testimonials %}
+                <div class="testimonial-box">
+                    <h6 class="mb-3">"{{testimonial.title}}"</h6>
+                    <p class="mb-3">{{testimonial.review}}</p>
+                    <img src="{{testimonial.image | relative_url}}" class="author-image rounded-circle" alt="{{testimonial.title}}">
+                    <div class="rating-image">
+                        <img src="{{'/assets/images/testimonial/stars_blank.png' | relative_url}}" alt="img">
+
+                        <div class="rating-point" style="width:{{testimonial.rating}}"><img src="{{'/assets/images/testimonial/stars_full.png' | relative_url}}"
+                                alt="img"></div>
+                    </div>
+                    <h5 class="m-0">{{testimonial.name}}</h5>
+                    <p class="m-0 text-muted">{{testimonial.designation}}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!--  ======== Testimonial Area End =========  -->

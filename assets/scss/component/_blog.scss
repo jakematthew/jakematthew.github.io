@@ -1,0 +1,61 @@
+/*
+==========================================
+    Blog Area
+==========================================
+*/
+.blog-post-style{
+    font-size: $small-font-size;
+    box-shadow:$box-shadow; 
+    margin-top: 30px;
+    transition: $transition-base; 
+    .feature-image{
+        overflow: hidden;
+        img{
+            width: 100%;
+            transition: $transition-base;
+        }
+    }
+    .border-top{
+        margin: 20px 0;
+    }
+    .post-content{
+        padding:15px;
+        .post-meta{
+            margin-bottom: 0;
+            li{
+                margin-right: 20px;
+                i{
+                    margin-right: 5px;
+                }
+            }
+        }
+        .readmore{
+            i{
+                margin-left: 10px;
+            }
+        }
+    }
+    &:hover{
+        box-shadow: $box-shadow-lg;
+        background:$light;
+        transform: translateY(-5px);
+        .feature-image{
+            img{
+                transform: scale(1.02);
+            }
+        }
+    }
+}
+
+section#category-page, section#category-page .bg-overlay, section#category-page .banner-item {
+    max-height: 350px;
+}
+
+section#category-page .section-title.mb-2.text-center {
+    margin: 150px auto;
+    color: white;
+}
+
+nav.page-pagination {
+    width: 100%;
+}

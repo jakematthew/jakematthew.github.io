@@ -1,0 +1,14 @@
+#Please use the main menu items under the "text"
+
+- text: Home
+  url: /#home
+- text: Services
+  url: /#services
+- text: Expertise
+  url: /#expertise
+- text: Projects
+  url: /#projects
+- text: News
+  url: /#news
+- text: Contact
+  url: /#contact

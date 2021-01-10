@@ -1,0 +1,33 @@
+/*
+==========================================
+    Experience Area
+==========================================
+*/
+.experience-nav{
+     margin-top: 15px;
+    .nav-link {
+      border: 0;
+      padding: 15px 0;
+      text-align: center;
+      margin: 10px 0;
+      background-color:$info;
+      &.active {
+        background-color: $success;
+        border-color: $primary;
+        box-shadow:$box-shadow; 
+        color: $light; 
+      }
+    }
+}
+.experience-progressbar{
+   margin-top: 30px;
+   background-color:$info;
+   padding:15px;
+   .progress{
+      margin-bottom:30px;
+      height: 10px;
+      .progress-bar{
+        background-color:$success;
+      }
+   }
+}

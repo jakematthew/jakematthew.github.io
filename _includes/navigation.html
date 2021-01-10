@@ -1,0 +1,5 @@
+<ul class="navbar-nav mx-auto">
+    {% for link in site.data.navigation %}
+        <li class="nav-item"> <a class="nav-link" href="{{link.url}}">{{link.text}}</a> </li>
+    {% endfor %}
+</ul>

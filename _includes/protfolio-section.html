@@ -1,0 +1,32 @@
+<!--  ======= Portfolio Area Start ======  -->
+<section class="portfolio-area pt-10" id="projects">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 m-auto">
+                <div class="section-title text-center mb-2">
+                    <h3 class="mb-5">Portfolio Showcase</h3>
+                    <p>The as name project and have the we for can luxury. So bidding temple the to handwriting a
+                        work, from in unavoidable.</p>
+                </div>
+            </div>
+        </div>
+        <nav class="text-center">
+            <ul class="portfolioFilter mb-0">
+                <li class="list-inline-item"><a class="active" href="#" data-filter="*">All</a></li>
+                <li class="list-inline-item"><a href="#" data-filter=".natural">Natural</a></li>
+                <li class="list-inline-item"><a href="#" data-filter=".creative">Creative</a></li>
+                <li class="list-inline-item"><a href="#" data-filter=".personal">Personal</a></li>
+                <li class="list-inline-item"><a href="#" data-filter=".photography">Photography</a></li>
+            </ul>
+        </nav>
+        <div class="portfolioContainer row">
+            {% for project in site.data.protfolio %}
+                <div class="col-lg-4 col-md-6 mt-4 {{project.classes_name}}">
+                    {% include project-card.html %}
+                </div>
+            {% endfor %}
+            
+        </div>
+    </div>
+</section>
+<!--  ======= Portfolio Area End ========  -->

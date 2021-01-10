@@ -1,0 +1,29 @@
+/*
+==========================================
+    Contact Area
+==========================================
+*/
+
+
+.contact-info-box{
+   margin-top:30px;
+   .contact-icon{
+       font-size: $h2-font-size;
+       margin-bottom: 15px;
+   }
+}
+.contact-form{
+    .form-group{
+         .form-control {
+            outline: none;
+            box-shadow: none;
+            
+            height: auto;
+            padding:15px;
+            color: $secondary;
+            border-radius: $border-radius;
+            transition: all 0.2s ease;
+        }
+    }
+
+}

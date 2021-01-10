@@ -1,0 +1,81 @@
+/* ============================================== 
+  Media Query : 1200px
+============================================== */
+@media only screen and (max-width:1200px) {
+
+
+
+}
+
+
+
+
+/* ============================================== 
+  Media Query : 991px
+============================================== */
+@media only screen and (max-width: 991px ) {
+   .header-navbar{
+   	   .navbar-collapse{
+	      background-color:$secondary;
+	      padding: 15px; 
+	      .navbar-nav{
+	      	 margin-bottom: 10px;
+	      	 li{
+	      	 	a{
+	      	 		padding-left: 0 !important;
+	      	 		padding-right:0 !important;
+	      	 	}
+	      	 }
+	      }
+	  }
+   }
+   .comment-box{
+   	.comment-avata {
+	    width: 40px;
+	}
+	.comment-body {
+	    width: calc(100% - 40px);
+	    .reply-action{
+	    	float: none;
+           display: inline-block;
+           margin: 10px 0; 
+	    }
+	}
+   }
+
+
+
+
+
+}
+
+
+
+
+
+/* ============================================== 
+  Media Query : 767px
+============================================== */
+@media only screen and (max-width: 767px) {
+
+
+
+
+
+}
+
+
+
+
+/* ============================================== 
+  Media Query : 575px
+============================================== */
+@media only screen and (max-width: 575px) {
+  .feature-slider{
+  	.owl-nav{
+  		position: static;
+  		margin-top: 20px;
+  	}
+  }
+
+}

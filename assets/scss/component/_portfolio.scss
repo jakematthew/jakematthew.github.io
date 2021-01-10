@@ -1,0 +1,98 @@
+/*
+==========================================
+    Portfolio Area
+==========================================
+*/
+
+.portfolioFilter{
+    margin-top: 30px;
+    li{
+        a{
+          padding: 10px 20px;
+          border-radius:$border-radius;
+          transition: $transition-base;
+           &.active, &:hover{
+                color: $light;
+                background-color: $success;
+            }
+        }
+    }
+}
+
+.portfolio-box {
+    transition: $transition-base;
+    box-shadow:$box-shadow;
+    .portfolio-image {
+        overflow: hidden;
+        position:relative;
+        img {
+            transition:$transition-base;
+            width: 100%;
+        }
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            transition:$transition-base;
+            background-color: rgba($primary, 0.6);
+            .portfolio-icon {
+                position: absolute;
+                right: 0;
+                left: 0;
+                margin: auto;
+                top: 50%;
+                height: 45px;
+                width: 45px;
+                display: inline-block;
+                border-radius:100%; 
+                color: $light;
+                padding:9px 0px;
+                text-align: center;
+                background-color:$secondary;
+                -webkit-transform: translateY(10px);
+                transform: translateY(10px);
+                transition: $transition-base;
+                &:hover {
+                    color: $success;
+                }
+
+            }
+
+        }
+    }
+    .portfolio-content{
+        padding: 15px;
+        h5 {
+            
+            font-size: $font-size-base;
+        }
+        span {
+          opacity: 0.5;
+        }
+    }
+    &:hover {
+        box-shadow: $box-shadow-lg;
+        transform: translateY(-5px);
+        .portfolio-image{
+            img{
+                transform: rotate(2deg) scale(1.15);
+            }
+            .portfolio-overlay {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                .portfolio-icon {
+                    transform: translateY(-20px);
+                }           
+             }
+        }
+
+    }
+}
+
+
+
+
