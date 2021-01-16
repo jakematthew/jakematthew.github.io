@@ -1,8 +1,8 @@
 <div class="portfolio-box" data-aos="fade-up" data-aos-duration="1000">
     <div class="portfolio-image">
-        <img src="{{project.image}}" class="img-fluid" alt="member-image">
+        <img src="{{project.image | relative_url}}" class="img-fluid" alt="{{project.title}}">
         <div class="portfolio-overlay">
-            <a href="{{project.image}}" class="portfolio-icon">
+            <a href="{{project.image | relative_url}}" class="portfolio-icon">
                 <i class="fas fa-camera"></i>
             </a>
         </div>
